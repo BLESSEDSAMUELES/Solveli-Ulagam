@@ -1,0 +1,43 @@
+# Allowlist: ignore everything at the top level, then re-include only what belongs in the repository.
+# Keeps secrets, source media, other projects and third-party data of unclear rights out by default.
+/*
+!/.gitignore
+!/LICENSE
+!/THIRD_PARTY_NOTICES.md
+!/README.md
+!/Tholkappiam.txt
+
+# The web application
+!/web/
+/web/node_modules/
+/web/.next/
+/web/out/
+/web/build/
+/web/.env*
+/web/*.tsbuildinfo
+/web/next-env.d.ts
+
+# Datasets: the ontology, the Tanglish vocabulary (MIT) and the extraction scripts only.
+# Thirukkural.pdf / thirukkural.json are excluded (modern commentaries of uncertain copyright) — see README.
+!/datasets/
+/datasets/*
+!/datasets/Ontology.csv
+!/datasets/Query_Mapping.csv
+!/datasets/extract_thirukkural.py
+!/datasets/tk_glyphs.py
+!/datasets/tanglish/
+
+# Sentamizh corpus (Apache-2.0): only the file the app reads, plus its licence and attribution.
+!/sentamizh-corpus/
+/sentamizh-corpus/*
+!/sentamizh-corpus/sentamizh_corpus.json
+!/sentamizh-corpus/LICENSE
+!/sentamizh-corpus/README.md
+!/sentamizh-corpus/CITATION.cff
+
+# Never commit, wherever they appear
+.env
+.env.*
+*.pem
+__pycache__/
+.DS_Store

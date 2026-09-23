@@ -1,0 +1,65 @@
+SOLVELI (சொல்வெளி) — PROPRIETARY LICENCE
+ALL RIGHTS RESERVED
+
+Copyright (c) 2026 Team Solveli: Blessed Samueles N G, Andrew Savio M and Logesh E
+("the Copyright Holders"). All rights reserved.
+
+1. THE WORK
+   "The Work" means everything in this repository created by or for the Copyright Holders, including without
+   limitation: the source code of the Solveli application and its services; the database schema and migrations;
+   the user-interface designs, layouts and styles; the Solveli ontology and query mappings; the character artwork
+   and portraits; the world introduction films; the text, lessons, challenges, prompts and documentation; and any
+   compilation, selection or arrangement of data. The Work does not include the Third-Party Materials listed in
+   THIRD_PARTY_NOTICES.md, which remain under their own licences (see section 6).
+
+2. OWNERSHIP
+   The Work is the exclusive property of the Copyright Holders and is protected by copyright and other
+   intellectual-property laws. Nothing in this licence transfers any ownership.
+
+3. NO LICENCE GRANTED
+   Except for the limited permission in section 4, no right or licence is granted, expressly, by implication,
+   estoppel or otherwise, to use, copy, reproduce, modify, adapt, translate, merge, publish, distribute,
+   sublicense, sell, rent, lend, host, deploy, offer as a service, create derivative works of, or otherwise
+   exploit the Work or any part of it.
+
+4. LIMITED PERMISSION TO VIEW AND EVALUATE
+   (a) You may view the Work on GitHub. Any copying or forking that GitHub's Terms of Service permit within
+       GitHub is allowed only to that extent and grants no further rights.
+   (b) Judges, reviewers and organisers of a competition or evaluation to which the Copyright Holders have
+       submitted the Work (including AUREX'26) may download and run the Work privately, solely to evaluate it,
+       for the duration of that evaluation.
+   (c) This permission is personal, revocable, non-exclusive and non-transferable, and does not include any
+       commercial, institutional, production or public use.
+
+5. COMMERCIAL AND INSTITUTIONAL LICENSING
+   Any commercial use, and any use by or for an organisation — including companies, educational, research,
+   cultural or government institutions — requires a separate written licence agreement signed by all the
+   Copyright Holders. Such licences, their scope and their fees are at the sole discretion of the Copyright
+   Holders. Licensing enquiries: contact the Copyright Holders through the owner of this repository,
+   https://github.com/BLESSEDSAMUELES.
+
+6. THIRD-PARTY MATERIALS
+   Third-party materials included in or used by this repository are listed in THIRD_PARTY_NOTICES.md and are
+   licensed by their respective owners under their own terms. This licence does not restrict any rights you have
+   under those terms for those materials, and does not grant any rights in them.
+
+7. CONFIDENTIALITY OF UNPUBLISHED MATERIAL
+   Access to any part of the Work that is not publicly displayed (for example, through an evaluation copy) does
+   not make it public, and it may not be disclosed to others without the written consent of the Copyright Holders.
+
+8. TERMINATION
+   Any use of the Work outside this licence is unauthorised and automatically terminates any permission granted
+   under section 4. On termination you must stop using the Work and delete all copies in your possession.
+
+9. NO WARRANTY
+   THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+   WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+10. LIMITATION OF LIABILITY
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+   OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   WITH THE WORK OR THE USE OF OR OTHER DEALINGS IN THE WORK.
+
+11. GOVERNING LAW
+   This licence is governed by the laws of India. The courts at Chennai, Tamil Nadu, shall have exclusive
+   jurisdiction over any dispute arising from it.
