@@ -8,7 +8,8 @@
 [![React 19](https://img.shields.io/badge/React-19.2.8-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Auth%20%26%20RLS-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com/)
-[![Groq AI](https://img.shields.io/badge/Groq-LLaMA%203.3--70B-F55036?style=for-the-badge)](https://groq.com/)
+[![Blender 3D](https://img.shields.io/badge/Blender-3D%20Models-F5792A?style=for-the-badge&logo=blender)](https://www.blender.org/)
+[![Tamil LLMs](https://img.shields.io/badge/Tamil%20LLMs-Time%20Gravity%202B%20%7C%20Kavitha%20Saaram-8a4b22?style=for-the-badge)](https://huggingface.co/)
 [![D3.js](https://img.shields.io/badge/D3.js-Knowledge%20Graph-F9A03C?style=for-the-badge&logo=d3.js)](https://d3js.org/)
 
 ---
@@ -67,6 +68,10 @@ flowchart TD
         GH[Academy: Lessons, Challenges & Quests]
     end
 
+    subgraph 3DModeling["3D Asset Creation"]
+        BLENDER[Blender: 3D Scene & World Modeling]
+    end
+
     subgraph SearchEngine["Hybrid Normalization & Search Engine"]
         IN[User Input: Tamil / Tanglish / English / Kural #]
         TL[Tanglish Engine: SentencePiece + ULMFiT Embeddings]
@@ -82,7 +87,7 @@ flowchart TD
     end
 
     subgraph AI["AI Layer (Bounded & Explicitly Labelled)"]
-        GROQ[Groq Cloud: LLaMA-3.3-70B-Versatile]
+        LLM[Tamil LLMs: Time Gravity Tamil LLM 2B & Kavitha Saaram LLM]
         BOUND[Grounded Prompts: Strictly Bounded to Corpus Hits]
     end
 
@@ -91,6 +96,7 @@ flowchart TD
         RLS[Row Level Security: Profiles, XP, Streaks, Progress]
     end
 
+    BLENDER --> WM
     IN --> TL
     IN --> LEM
     IN --> ONT
@@ -99,8 +105,8 @@ flowchart TD
     DataTruth --> KG
     DataTruth --> WM
     DataTruth -.->|Only for unverified words or contextual synthesis| BOUND
-    BOUND --> GROQ
-    GROQ -.->|Labelled as AI Interpretation| UI
+    BOUND --> LLM
+    LLM -.->|Labelled as AI Interpretation| UI
     UI <--> RLS
     RLS <--> AUTH
 ```
@@ -117,7 +123,7 @@ sequenceDiagram
     participant Engine as Search & Lemmatizer
     participant Corpus as Sentamizh & Kural Corpus
     participant Graph as Tolkāppiyam Knowledge Graph
-    participant AI as Groq LLaMA-3.3 (Bounded)
+    participant AI as Tamil LLMs: Time Gravity 2B & Kavitha Saaram (Bounded)
     participant DB as Supabase Progress
 
     User->>UI: Input "anbu" (Tanglish) or "அன்பு" (Tamil)
@@ -152,7 +158,7 @@ sequenceDiagram
 - **Sutra Evidence Grounding:** Automatically cross-references nodes to exact Tolkāppiyam sutras with algorithmic relevance scoring.
 
 ### 3. 🗺️ 5 Immersive Literary Worlds
-Each world represents an epoch in Tamil civilization with dedicated color palettes, thematic framing, curated texts, and cinematic video introductions:
+Each world represents an epoch in Tamil civilization with dedicated 3D models crafted in **Blender**, authentic color palettes, thematic framing, curated texts, and cinematic video introductions:
 
 | World | Era / Span | Focus & Corpus | Visual Motif & Sub-zones |
 | :--- | :--- | :--- | :--- |
@@ -187,8 +193,9 @@ Gamification exists strictly to reward authentic learning:
 - **Diamonds & Hearts:** Diamonds reward streaks and accomplishments; Hearts protect learners during challenge assessments without locking reading or reference access behind paywalls.
 - **Daily Quests & Streaks:** Encourages sustained daily engagement with historical literature.
 
-### 6. 🛡️ Trust Architecture & Honest AI
-- **Strict Grounding:** Groq LLaMA-3.3-70B is invoked *only* when a query cannot be verified in the corpus or when generating contextual syntheses.
+### 6. 🛡️ Trust Architecture & Dedicated Tamil LLMs
+- **Specialized Tamil Intelligence:** Powered by **Time Gravity Tamil LLM 2B** and **Kavitha Saaram LLM** for nuanced classical comprehension, poetic interpretation, and contextual synthesis.
+- **Strict Grounding:** The Tamil LLMs are invoked *only* when a query cannot be verified in the corpus or when generating contextual syntheses, strictly bounded by retrieved verse citations.
 - **Prominent Labelling:** AI output is visually badged with a distinct bot indicator, accompanied by an explicit disclaimer: *“AI-assisted explanation — an interpretation, not literary evidence.”*
 - **Contested Dating Transparency:** Dates are represented as scholarly ranges (e.g. `c. 300–600 CE`) rather than artificial, rigid historical absolutes.
 
@@ -197,15 +204,16 @@ Gamification exists strictly to reward authentic learning:
 ## 💻 Tech Stack & Infrastructure
 
 ```
-Frontend Architecture          Backend & Data Engines         AI & Cloud Services
+Frontend & 3D Assets           Backend & Data Engines         AI & Tamil Intelligence
 ┌───────────────────────┐      ┌────────────────────────┐     ┌───────────────────────┐
-│ • Next.js 16.3.6      │      │ • Next.js Server Runt. │     │ • Groq Cloud          │
-│ • React 19.2.8        │      │ • Supabase PostgreSQL  │     │   (LLaMA 3.3-70B)     │
-│ • TypeScript 5.0      │      │ • Row Level Security   │     │ • Supabase Auth       │
-│ • D3.js 7.9 (Graph)   │      │ • SentencePiece Token. │     │   (Google OAuth/Email)│
-│ • Lottie-Web 5.13     │      │ • ULMFiT Vector Embed. │     │ • PGlite (Local Tests)│
-│ • Lucide Icons        │      │ • Python Extraction    │     │ • Project Madurai     │
-│ • Modern Vanilla CSS  │      │ • PyMuPDF (PDF Parser) │     │ • Sentamizh Corpus    │
+│ • Next.js 16.3.6      │      │ • Next.js Server Runt. │     │ • Time Gravity        │
+│ • React 19.2.8        │      │ • Supabase PostgreSQL  │     │   Tamil LLM 2B        │
+│ • TypeScript 5.0      │      │ • Row Level Security   │     │ • Kavitha Saaram LLM  │
+│ • Blender (3D Models) │      │ • SentencePiece Token. │     │ • Supabase Auth       │
+│ • D3.js 7.9 (Graph)   │      │ • ULMFiT Vector Embed. │     │   (Google OAuth/Email)│
+│ • Lottie-Web 5.13     │      │ • Python Extraction    │     │ • PGlite (Local Tests)│
+│ • Lucide Icons        │      │ • PyMuPDF (PDF Parser) │     │ • Project Madurai     │
+│ • Modern Vanilla CSS  │      │ • Sentamizh Corpus     │     │ • Sentamizh Corpus    │
 └───────────────────────┘      └────────────────────────┘     └───────────────────────┘
 ```
 
@@ -296,7 +304,6 @@ Create a file named `.env` inside the `web/` folder:
 # web/.env
 SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_KEY=your-publishable-anon-key   # NEVER use service-role key
-GROQ_API_KEY=gsk_your_groq_api_key      # Required for AI contextual explanations
 ```
 
 > [!NOTE]
@@ -341,13 +348,13 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 <details>
 <summary><b>1. Is Solveli World just a 3D video game?</b></summary>
 <br>
-<b>No.</b> The WordNet lexical graph and verified corpus are the core intellectual property. The 3D environments and cinematic entrances are experience and visualization layers over the exact same source of truth. If WebGL or graphics acceleration is unavailable, Solveli gracefully degrades to a 100% accessible 2D graph and reading interface with zero loss of academic rigor.
+<b>No.</b> The WordNet lexical graph and verified corpus are the core intellectual property. The 3D models and environments—crafted in <b>Blender</b>—and cinematic entrances are experiential visualization layers over the exact same source of truth. If WebGL or graphics acceleration is unavailable, Solveli gracefully degrades to a 100% accessible 2D graph and reading interface with zero loss of academic rigor.
 </details>
 
 <details>
 <summary><b>2. How do you prevent LLM hallucinations?</b></summary>
 <br>
-Through <b>strict retrieval-first bounding</b>. The system never asks an LLM to recall classical Tamil facts from memory. The engine first queries the verified 41 MB Sentamizh Corpus and Tolkāppiyam text. If an AI explanation is generated, the LLM receives the verified verses as mandatory citations in its prompt and is forbidden from citing external sources. Any AI-generated text is explicitly badged with a warning.
+Through <b>strict retrieval-first bounding</b>. The system never asks an LLM to recall classical Tamil facts from memory. The engine first queries the verified 41 MB Sentamizh Corpus and Tolkāppiyam text. When generating contextual syntheses with <b>Time Gravity Tamil LLM 2B</b> and <b>Kavitha Saaram LLM</b>, the models receive verified verses as mandatory citations in their prompts and are strictly bounded by corpus hits. Any AI-generated text is explicitly badged with a warning.
 </details>
 
 <details>
@@ -381,6 +388,7 @@ Existing tools (like Tamil Virtual Academy or agarathi.com) provide static, 1-to
 ## 📜 Intellectual Property & Third-Party Notices
 
 - **Solveli Proprietary Core:** The application code, knowledge graph mapping architecture, UI design, and pedagogical engine are proprietary works © 2026 Team Solveli (Blessed Samueles N G, Andrew Savio M, Logesh E). All rights reserved.
+- **3D Modeling & Worlds:** 3D models and spatial environments crafted using **Blender**.
 - **Sentamizh Corpus:** Used under the **Apache License 2.0** (see `sentamizh-corpus/LICENSE`).
 - **Tolkāppiyam Text:** Distributed under the preservation terms of **Project Madurai** (1998–2024).
 - **Tanglish NLP Engine:** Derived from `goru001/nlp-for-tanglish` under the **MIT License**.
